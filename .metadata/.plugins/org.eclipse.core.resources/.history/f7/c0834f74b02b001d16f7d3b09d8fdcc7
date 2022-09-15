@@ -1,0 +1,44 @@
+/*
+ ============================================================================
+ Name        : Ejercicio4Sabado.c
+ Author      : Miriam Coanque
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+/*Crear una función que reciba como parámetro dos números enteros, que realice el promedio de los números y que retorne dicho valor.*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+float promediarDosNumeros(int numeroA, int numeroB);
+
+int main(void)
+{
+	setbuf(stdout,NULL);
+
+	int resultado;
+
+	resultado= promediarDosNumeros(int numeroA, int numeroB);
+	printf("el promedio de los dos numeros ingresados es: %d", resultado);
+
+	return EXIT_SUCCESS;
+}
+float promediarDosNumeros(int numeroA, int numeroB)
+{
+	float promedio;
+	int retorno;
+
+	printf("ingrese un numero: ");
+	scanf("%d", &numeroA);
+
+	printf("ingrese otro numero: ");
+	scanf("%d",&numeroB);
+
+	promedio= (float)(numeroA+numeroB)/2;
+
+	return retorno;
+
+
+}

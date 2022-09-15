@@ -1,0 +1,42 @@
+/*
+ ============================================================================
+ Name        : Ejercicio7Sabado.c
+ Author      : Miriam Coanque
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+/*Pedir el ingreso de 10 números enteros entre -1000 y 1000. Determinar:
+Cantidad de positivos y negativos.
+Sumatoria de los pares.
+El mayor de los impares.
+Listado de los números ingresados.
+Listado de los números pares.
+Listado de los números de las posiciones impares.
+Se deberán utilizar funciones y vectores.*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+	setbuf(stdout);
+	int numero;
+	int contadorPositivos;
+	int contadorNegativos;
+	int acumuladorPares;
+
+	contadorPositivos=0;
+	contadorNegativos=0;
+	acumuladorPares=0;
+
+	do{
+		printf("ingrese un numero entre -1000 y 1000: ");
+		scanf("%d", &numero);
+
+	}while(numero<-1000 || numero>1000);
+
+
+	return EXIT_SUCCESS;
+}

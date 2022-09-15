@@ -1,0 +1,59 @@
+/*
+ ============================================================================
+ Name        : Ejercicio5Sabado.c
+ Author      : Miriam Coanque
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+/*Crear una función que reciba como parámetro un número entero.
+La función retorna 1 en caso de que sea positivo
+-1 en caso de que sea negativo y 0 en caso de que sea 0.
+Realizar la prueba lógica de la función en el main.*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+void recibirParametro(int numeroA); // prototipo
+
+int main(void)
+{
+	setbuf(stdout,NULL);
+
+	int numero1;
+	int resultado;
+
+	printf("ingrese un numero: ");
+	scanf("%d", &numero1);
+
+	resultado= recibirParametro(numero1);
+
+	printf("el numero es: %d", resultado);
+
+
+
+	return EXIT_SUCCESS;
+}
+
+void recibirParametro(int numeroA) //desarrollo
+{
+	int respuesta;
+
+	if(numeroA==0)
+	{
+		respuesta= printf("0");
+
+	}
+	else if(numeroA>0)
+	{
+		respuesta= printf("1");
+	}
+	else
+	{
+		respuesta= printf("-1");
+	}
+
+	return respuesta;
+
+}

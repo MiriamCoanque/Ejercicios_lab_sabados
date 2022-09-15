@@ -1,0 +1,52 @@
+/*
+ ============================================================================
+ Name        : Ejercicio7Sabado.c
+ Author      : Miriam Coanque
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+/*Pedir el ingreso de 10 números enteros entre -1000 y 1000. Determinar:
+Cantidad de positivos y negativos.
+Sumatoria de los pares.
+El mayor de los impares.
+Listado de los números ingresados.
+Listado de los números pares.
+Listado de los números de las posiciones impares.
+Se deberán utilizar funciones y vectores.*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#define VALOR_MINIMO -1000
+#define VALOR_MAXIMO 1000
+#define TAM_VECTOR 10
+
+int main(void)
+{
+	setbuf(stdout,NULL);
+
+	int i;
+	int buffer;
+	int numeroArray[];
+
+	//inicio de toma de datos
+	for(i=0;i<10;i++)
+	{
+		do{
+			printf("ingrese un numero entre %d y %d: ", VALOR_MINIMO, VALOR_MAXIMO);
+			scanf("%d", &buffer);
+
+			}while(buffer<VALOR_MINIMO || buffer>VALOR_MAXIMO);
+
+		numeroArray[i]=buffer;
+
+	}
+	//fin de toma de datos
+
+
+
+
+
+	return EXIT_SUCCESS;
+}
